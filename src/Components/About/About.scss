@@ -1,0 +1,46 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 500px 50px 520px;
+    justify-content: center;
+    margin: 100px;
+
+    img {
+        width: 500px;
+        margin-left: -18px;
+       
+    }
+
+    .about-details {
+        
+        grid-column: 3/4;
+
+        
+        h1 {
+            color: gray;
+        }
+
+        h1:after {
+            content: "";
+            width: 1px;
+            height: 100px;
+            background: tomato;
+            display: inline-block;
+            margin-left: 100px;
+        }
+        h2{
+            color: gold;
+        }
+
+        p:after {
+            content: "";
+            width: 1px;
+            height: 250px;
+            background: tomato;
+            display: block;
+            margin-left: 290px;
+            margin-top: 20px;
+        }
+
+        
+    }
+}
