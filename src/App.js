@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navigation from './Navigation/Navigation';
+import Banner from './Banner/Banner';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Navigation />
+      <Banner />
     </div>
   );
 }

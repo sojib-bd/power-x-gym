@@ -1,0 +1,35 @@
+.bannerContainer {
+   background-image: url('./banner.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 640px;
+   background-color: #757091;   
+   background-blend-mode: multiply;
+
+    .banner-body {
+        margin-left: 80px;
+        padding-top: 150px;
+        h3 {
+            color: white;
+            font-size: 60px;
+            width: 600px;
+           font-weight: 600;
+           
+        }
+        p{
+            color: white;
+            width: 500px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+           
+        }
+
+        button {
+            padding: 10px;
+            background-color: gold;
+            width: 200px;
+            font-weight: 600;
+            color: black;
+        }
+    }
+}

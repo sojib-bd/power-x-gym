@@ -1,5 +1,19 @@
-$common-color: red;
+.nav-container {
+    position: absolute;
+    width: 100%;
+   
+    .navTitle {
+        margin-left: 80px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+   .additional {
+       color: gold;
+   }
 
-.title {
-    color: $common-color;
+   .navLink {
+       color: white !important;
+       margin-right: 20px;
+       font-size: 18px;
+   }
 }
