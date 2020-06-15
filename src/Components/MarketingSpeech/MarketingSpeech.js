@@ -6,6 +6,8 @@ import img2 from './MarketingSpeechImages/Group 88.png';
 import img3 from './MarketingSpeechImages/gift-2.png';
 
 
+
+
 const MarketingSpeech = () => {
     return (
         <div className="marketing-container">
@@ -23,7 +25,9 @@ const MarketingSpeech = () => {
                     img={img3}
                     title="no commitment memberships"
                 />
+
             </div>
+
         </div>
     );
 };
