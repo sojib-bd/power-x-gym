@@ -5,6 +5,7 @@ import Banner from './Components/Banner/Banner';
 import Services from './Components/Services/Services';
 import About from './Components/About/About';
 import TrainingSection from './Components/TrainingSection/TrainingSection';
+import MarketingSpeech from './Components/MarketingSpeech/MarketingSpeech';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Services />
       <About />
       <TrainingSection />
+      <MarketingSpeech />
     </div>
   );
 }
