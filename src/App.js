@@ -4,15 +4,16 @@ import Home from './Components/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Classes from './Components/Classes/Classes';
 import NotMatch from './Components/NotMatch/NotMatch';
+import ServiceNotAvailable from './Components/ServiceNotAvailable/ServiceNotAvailable';
 
 
 
 
 function App() {
+
   return (
     <div >
       <Router>
-
         <Switch>
           <Route exact path="/">
             <Home />
@@ -23,9 +24,13 @@ function App() {
           <Route path="/classes">
             <Classes />
           </Route>
+          <Route path="/psycho-training">
+            <ServiceNotAvailable />
+          </Route>
           <Route path="*">
             <NotMatch />
           </Route>
+
         </Switch>
       </Router>
     </div>

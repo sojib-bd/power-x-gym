@@ -1,0 +1,41 @@
+.classCart {
+    width: 350px;
+    height: 300px;    
+    padding: 5px;
+
+    // trying something
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+
+    h4{       
+        background-color: gold;
+        padding: 20px;
+        margin-top: 280px;
+        margin-left: 5px;
+        text-align: center;
+        width: 330px;
+        font-family: 'Oswald', sans-serif;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .direction {
+        position: absolute;
+        left: 290px;
+        
+    }
+}
+
+
+.classCart:hover,
+.classCart:focus,
+.classCart:active {
+    transform: scale(1.1);
+    cursor: pointer;
+}
