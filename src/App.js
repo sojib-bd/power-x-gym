@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Classes from './Components/Classes/Classes';
 import NotMatch from './Components/NotMatch/NotMatch';
 import ServiceNotAvailable from './Components/ServiceNotAvailable/ServiceNotAvailable';
+import AdvanceGym from './Components/AdvanceGym/AdvanceGym';
 
 
 
@@ -25,8 +26,12 @@ function App() {
             <Classes />
           </Route>
           <Route path="/psycho-training">
-            <ServiceNotAvailable />
+            <ServiceNotAvailable title="psycho-training" />
           </Route>
+          <Route path="/advance-gym">
+            <AdvanceGym title="advance gym" />
+          </Route>
+
           <Route path="*">
             <NotMatch />
           </Route>

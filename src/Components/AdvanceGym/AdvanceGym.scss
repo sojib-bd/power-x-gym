@@ -1,0 +1,54 @@
+.gym-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 50px;
+   
+
+   .left {
+
+        input {
+            margin-bottom: 15px;
+        }
+   }
+
+   .right {
+       h1 {
+           font-family:'Oswald', sans-serif;
+           margin-bottom: 50px;
+          
+       }
+       .class-schedule{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 20px;
+           .day {
+               width: 250px;
+               height: 70px;              
+               text-align: center;
+               box-shadow: 7px 7px 5px 0px rgba(219, 216, 216, 0.75);
+               h4{
+                font-family: 'Oswald', sans-serif;
+               }
+               p {
+                   color: gold;
+               }
+           }
+           
+       }
+
+       button {
+           width: 200px;
+           background-color: gold;
+           text-align: center;
+           color: black;
+           border: none;
+           font-size: 20px;
+           font-family: 'Oswald', sans-serif;
+           margin-top: 280px;
+           margin-left: 380px;
+       }
+   }
+   
+}

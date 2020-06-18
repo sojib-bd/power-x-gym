@@ -1,22 +1,23 @@
 import React from 'react';
 import MediumBanner from '../MediumBanner/MediumBanner';
 import Footer from '../Footer/Footer';
-import { useParams } from 'react-router-dom';
+
 
 
 const ServiceNotAvailable = (props) => {
-    const styleService = {
+    const myStyle = {
         textAlign: 'center',
-        marginTop: '100px',
-        padding: '100px'
+        marginTop: '30px',
+        padding: '100px',
+        fontSize: '50px'
     }
 
 
     return (
         <div >
-            {/* <MediumBanner /> */}
-            <h3 style={{ styleService }}>service not available</h3>
-            {/* <Footer /> */}
+            <MediumBanner title={props.title} />
+            <h3 style={myStyle}>service not available</h3>
+            <Footer />
         </div>
     );
 };
