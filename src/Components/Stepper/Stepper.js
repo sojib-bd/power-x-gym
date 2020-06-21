@@ -5,6 +5,7 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import MembershipForm from '../MembershipForm/MembershipForm';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -64,6 +65,7 @@ export default function HorizontalLabelPositionBelowStepper() {
                     </Step>
                 ))}
             </Stepper>
+            <MembershipForm />
             <div>
                 {activeStep === steps.length ? (
                     <div>
