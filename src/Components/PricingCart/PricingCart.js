@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import './PricingCart.scss';
+import { Link } from 'react-router-dom';
 
 
 const PricingCart = (props) => {
@@ -19,7 +20,7 @@ const PricingCart = (props) => {
                 <li><span>&#10003;</span> Outstanding</li>
                 <li><span>&#10003;</span> Happy Customers</li>
             </ul>
-            <Button>PURCHASE</Button>
+            <Link to="/membership"><Button>PURCHASE</Button></Link>
         </div>
     );
 };
