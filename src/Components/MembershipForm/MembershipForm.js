@@ -7,7 +7,7 @@ const MembershipForm = () => {
         <div>
             <Form style={{ padding: '100px' }}>
                 <Form.Row>
-                    <Form.Group as={Col} controlId="formGridFirstName">
+                    <Form.Group as={Col} controlId="formGridFirstName" required>
                         <Form.Label>First Name</Form.Label>
                         <Form.Control type="text" placeholder="Enter First name" />
                     </Form.Group>
