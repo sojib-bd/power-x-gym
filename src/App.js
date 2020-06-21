@@ -6,6 +6,7 @@ import Classes from './Components/Classes/Classes';
 import NotMatch from './Components/NotMatch/NotMatch';
 import ServiceNotAvailable from './Components/ServiceNotAvailable/ServiceNotAvailable';
 import AdvanceGym from './Components/AdvanceGym/AdvanceGym';
+import Pricing from './Components/Pricing/Pricing';
 
 
 
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/advance-gym">
             <AdvanceGym title="advance gym" />
+          </Route>
+          <Route path="/pricing">
+            <Pricing />
           </Route>
 
           <Route path="*">
