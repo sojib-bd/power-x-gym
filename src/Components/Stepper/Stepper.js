@@ -23,17 +23,17 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 function getSteps() {
-    return ['Select master blaster campaign settings', 'Create an ad group', 'Create an ad'];
+    return ['step1', 'step2', 'Thank you'];
 }
 
 function getStepContent(stepIndex: number) {
     switch (stepIndex) {
         case 0:
-            return 'Select campaign settings...';
+            return <MembershipForm/>
         case 1:
-            return 'What is an ad group anyways?';
+            return <MembershipForm/>
         case 2:
-            return 'This is the bit I really care about!';
+            return <MembershipForm/>;
         default:
             return 'Unknown stepIndex';
     }
@@ -65,7 +65,7 @@ export default function HorizontalLabelPositionBelowStepper() {
                     </Step>
                 ))}
             </Stepper>
-            <MembershipForm />
+            {/* <MembershipForm /> */}
             <div>
                 {activeStep === steps.length ? (
                     <div>
