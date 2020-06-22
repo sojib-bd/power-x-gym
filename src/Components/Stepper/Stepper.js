@@ -6,11 +6,24 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import MembershipForm from '../MembershipForm/MembershipForm';
+import CheckoutForm from '../DemoForm/DemoForm';
+
+
+import {
+  CardElement,
+  Elements,
+  useStripe,
+  useElements,
+} from '@stripe/react-stripe-js';
+import {loadStripe} from '@stripe/stripe-js';
+
+const stripePromise = loadStripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         root: {
             width: '100%',
+            margin: '50px'
         },
         backButton: {
             marginRight: theme.spacing(1),
@@ -18,6 +31,7 @@ const useStyles = makeStyles((theme: Theme) =>
         instructions: {
             marginTop: theme.spacing(1),
             marginBottom: theme.spacing(1),
+           
         },
     }),
 );
@@ -31,7 +45,11 @@ function getStepContent(stepIndex: number) {
         case 0:
             return <MembershipForm/>
         case 1:
-            return <MembershipForm/>
+            return (
+                <Elements stripe={stripePromise}>
+                    <CheckoutForm/>
+                </Elements>
+            )
         case 2:
             return <MembershipForm/>;
         default:
@@ -64,8 +82,7 @@ export default function HorizontalLabelPositionBelowStepper() {
                         <StepLabel>{label}</StepLabel>
                     </Step>
                 ))}
-            </Stepper>
-            {/* <MembershipForm /> */}
+            </Stepper>            
             <div>
                 {activeStep === steps.length ? (
                     <div>
@@ -83,7 +100,7 @@ export default function HorizontalLabelPositionBelowStepper() {
                                 >
                                     Back
               </Button>
-                                <Button variant="contained" color="primary" onClick={handleNext}>
+                                <Button variant="contained" color="primary" onClick={handleNext} style={{marginLeft:'50px'}}>
                                     {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
                                 </Button>
                             </div>

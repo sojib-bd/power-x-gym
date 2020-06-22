@@ -2,14 +2,14 @@ import React from 'react';
 import { Form, Col } from 'react-bootstrap';
 
 
-const MembershipForm = () => {
+const MembershipForm = (props) => {
     return (
         <div>
             <Form style={{ padding: '100px' }}>
                 <Form.Row>
-                    <Form.Group as={Col} controlId="formGridFirstName" required>
+                    <Form.Group as={Col} controlId="formGridFirstName" >
                         <Form.Label>First Name</Form.Label>
-                        <Form.Control type="text" placeholder="Enter First name" />
+                        <Form.Control required={true} type="text" placeholder="Enter First name" />
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formGridLastName">
@@ -69,7 +69,7 @@ const MembershipForm = () => {
                     </Form.Group>
                 </Form.Row>
 
-
+                
             </Form>
         </div>
     );
